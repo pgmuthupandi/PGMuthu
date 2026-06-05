@@ -2,6 +2,11 @@
 
 A modern, responsive 7-page personal portfolio website built with HTML, CSS, and JavaScript.
 
+## 👤 Author
+
+**Muthupandi G**  
+ORCID: [0009-0002-8822-0157](https://orcid.org/0009-0002-8822-0157)
+
 ## 📄 Pages Included
 
 1. **Home (index.html)** - Landing page with hero section and featured projects
@@ -146,7 +151,7 @@ This portfolio template is free to use and modify for personal projects.
 
 ---
 
-**Created:** June 2026
+**Created:** June 2026  
 **Last Updated:** June 2026
 
 Enjoy your new portfolio website! 🚀
