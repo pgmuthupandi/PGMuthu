@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock - Multiple Time Zones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>🕐 Global Digital Clock</h1>
+            <p>Current Time Across Different Time Zones</p>
+        </header>
+
+        <!-- Control Panel -->
+        <div class="control-panel">
+            <div class="search-box">
+                <input type="text" id="timezoneSearch" placeholder="Search time zone..." class="search-input">
+                <span class="search-icon">🔍</span>
+            </div>
+            
+            <div class="time-format-toggle">
+                <button class="format-btn active" data-format="12">12 Hour</button>
+                <button class="format-btn" data-format="24">24 Hour</button>
+            </div>
+
+            <div class="action-buttons">
+                <button id="addTimezoneBtn" class="btn btn-primary">+ Add Time Zone</button>
+                <button id="resetBtn" class="btn btn-secondary">Reset</button>
+            </div>
+        </div>
+
+        <!-- Add Timezone Modal -->
+        <div id="addTimezoneModal" class="modal hidden">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Add Time Zone</h2>
+                    <button class="close-btn">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="timezone-list">
+                        <div id="timezoneOptions"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Clocks Grid -->
+        <div class="clocks-grid" id="clocksContainer">
+            <!-- Clocks will be added here dynamically -->
+        </div>
+
+        <!-- Info Section -->
+        <section class="info-section">
+            <div class="info-card">
+                <h3>💡 Features</h3>
+                <ul>
+                    <li>Real-time clock updates</li>
+                    <li>Multiple time zones support</li>
+                    <li>12/24 hour format toggle</li>
+                    <li>Search functionality</li>
+                    <li>Add/Remove time zones</li>
+                    <li>Responsive design</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3>⏰ Time Zone Categories</h3>
+                <ul>
+                    <li>Americas: EST, CST, MST, PST</li>
+                    <li>Europe: GMT, CET, EET</li>
+                    <li>Asia: IST, JST, SGT, HKT</li>
+                    <li>Pacific: AEST, NZST</li>
+                    <li>UTC/Coordinated Time</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
